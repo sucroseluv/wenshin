@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/distributed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_bottom_line"
+        android:padding="16dp"
+        android:text="Распределено 2 из 10 часов"
+        android:textColor="@color/blue_500"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distributed">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/sessions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:padding="8dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/seansNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Сеанс №1"
+                        android:textColor="@color/blue_500"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/consultDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Дата: 04.06.2022"
+                        android:textColor="@color/blue_500"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seansNumber" />
+
+                    <Button
+                        android:id="@+id/chooseDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Выбрать другую"
+                        app:layout_constraintBottom_toBottomOf="@+id/consultDate"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/consultDate" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintTop_toBottomOf="@+id/chooseDate">
+
+                        <com.google.android.flexbox.FlexboxLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            app:alignContent="stretch"
+                            app:alignItems="stretch"
+                            app:flexWrap="wrap"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <FrameLayout
+                                android:id="@+id/time8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/background_stroke_ripple_corners"
+                                android:padding="8dp"
+                                tools:layout_editor_absoluteX="8dp"
+                                tools:layout_editor_absoluteY="8dp">
+
+                                <TextView
+                                    android:id="@+id/textTime9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="8:00" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/time9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/background_stroke_ripple_corners"
+                                android:padding="8dp"
+                                tools:layout_editor_absoluteX="67dp"
+                                tools:layout_editor_absoluteY="8dp">
+
+                                <TextView
+                                    android:id="@+id/textTime9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="9:00" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/time10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/background_stroke_ripple_corners"
+                                android:padding="8dp"
+                                tools:layout_editor_absoluteX="126dp"
+                                tools:layout_editor_absoluteY="8dp">
+
+                                <TextView
+                                    android:id="@+id/textTime9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="10:00" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/time11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/background_ripple_corners"
+                                android:padding="8dp"
+                                tools:layout_editor_absoluteX="193dp"
+                                tools:layout_editor_absoluteY="8dp">
+
+                                <TextView
+                                    android:id="@+id/textTime9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="11:00" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/time12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/background_ripple_corners"
+                                android:padding="8dp"
+                                tools:layout_editor_absoluteX="260dp"
+                                tools:layout_editor_absoluteY="8dp">
+
+                                <TextView
+                                    android:id="@+id/textTime9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="12:00" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/time13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/background_ripple_corners"
+                                android:padding="8dp"
+                                tools:layout_editor_absoluteX="8dp"
+                                tools:layout_editor_absoluteY="57dp">
+
+                                <TextView
+                                    android:id="@+id/textTime9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="13:00" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/time14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/background_ripple_corners"
+                                android:padding="8dp"
+                                tools:layout_editor_absoluteX="75dp"
+                                tools:layout_editor_absoluteY="57dp">
+
+                                <TextView
+                                    android:id="@+id/textTime9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="14:00" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/time15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/background_ripple_corners"
+                                android:padding="8dp"
+                                tools:layout_editor_absoluteX="142dp"
+                                tools:layout_editor_absoluteY="57dp">
+
+                                <TextView
+                                    android:id="@+id/textTime9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="15:00" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/time16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/background_stroke_ripple_corners"
+                                android:padding="8dp"
+                                tools:layout_editor_absoluteX="209dp"
+                                tools:layout_editor_absoluteY="57dp">
+
+                                <TextView
+                                    android:id="@+id/textTime9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="16:00" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/time17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/background_stroke_ripple_corners"
+                                android:padding="8dp"
+                                tools:layout_editor_absoluteX="276dp"
+                                tools:layout_editor_absoluteY="57dp">
+
+                                <TextView
+                                    android:id="@+id/textTime9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="17:00" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/time18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/background_stroke_ripple_corners"
+                                android:padding="8dp"
+                                tools:layout_editor_absoluteX="8dp"
+                                tools:layout_editor_absoluteY="106dp">
+
+                                <TextView
+                                    android:id="@+id/textTime9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="18:00" />
+                            </FrameLayout>
+                        </com.google.android.flexbox.FlexboxLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/addSession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Добавить сеанс"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/nextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Готово"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

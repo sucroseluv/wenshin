@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/guest_navigation"
+    app:startDestination="@id/mainGuestFragment">
+    <fragment
+        android:id="@+id/mainGuestFragment"
+        android:name="com.sucroseluvv.wenshin.Screens.GuestScreens.MenuFragments.MainGuestFragment"
+        android:label="Главная"
+        tools:layout="@layout/fragment_main_user" />
+    <fragment
+        android:id="@+id/accountGuestFragment"
+        android:name="com.sucroseluvv.wenshin.Screens.GuestScreens.MenuFragments.GuestLoginFragment"
+        android:label="Авторизация"
+        tools:layout="@layout/fragment_account_user" />
+</navigation>

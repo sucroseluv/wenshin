@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screens.UserScreens.InfoReccomendationsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView84"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Рекомендации до нанесения татуировки"
+                android:textColor="@color/blue_500"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="- Накануне процедуры не принимать алкоголь и кофе;\n- Непосредственно перед процедурой  (за 2часа) не употреблять жидкость в больших количествах; \n- За 24 часа до процедуры не употреблять высокоаллергенные продукты питания;"
+                android:textColor="@color/blue_500"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView84"
+                app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+            <TextView
+                android:id="@+id/textView86"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Рекомендации после нанесения татуировки"
+                android:textColor="@color/blue_500"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+            <TextView
+                android:id="@+id/textView87"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="     В течение 10 суток после процедуры запрещены:
+\n    -сауна;
+\n    -бассейн;
+\n    -баня;
+\n    -солярий;
+\n    -посещение стоматолога;
+\n    -посещение косметического кабинета;
+\n    -декоративная косметика на области татуажа.
+\nКатегорически запрещается размачивать специально и удалять корочку, т. к. вместе с ней отторгнется и цвет!\n     На протяжении 14 дней смазывать область татуажа тонким слоем заживляющего крема Накануне процедуры не принимать алкоголь и кофе;\n     Непосредственно перед процедурой  (за 2часа) не употреблять жидкость в больших количествах; \n     За 24 часа до процедуры не употреблять высокоаллергенные продукты питания;"
+                android:textColor="@color/blue_500"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView84"
+                app:layout_constraintTop_toBottomOf="@+id/textView86" />
+
+            <TextView
+                android:id="@+id/textView88"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Уход за татуировкой"
+                android:textColor="@color/blue_500"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView87" />
+
+            <TextView
+                android:id="@+id/textView89"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="1)После окончания процедуры кожа обрабатывается водным антисептиком, наносится  мазь и накладывается стерильная повязка. \n2)Первые 2 дня являются самыми важными в процессе заживления тату. \n3)Вам нужно будет периодически удалять выступающую сукровицу с поверхности татуировки и закрывать место нанесения рисунка бинтом. \n4)Через 2-3 дня татуировка покрывается тонкой корочкой, которая сохраняется до конца заживления, примерно 7-10 дней. \n5)В процессе заживления может присутствовать незначительный зуд. \n6)Старайтесь не чесать и всячески не беспокоить место тату, так как механическое повреждение может повредить рисунок. Во время заживления используйте препарат, рекомендованный мастером (использование иных медикаментозных средств может привести к повреждению рисунка). \n7)Если при не очень удачном заживлении татуировки  рисунок местами вышел, мастер проводит коррекцию. "
+                android:textColor="@color/blue_500"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView84"
+                app:layout_constraintTop_toBottomOf="@+id/textView88" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

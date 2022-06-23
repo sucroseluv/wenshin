@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/seansNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Сеанс №1"
+            android:textColor="@color/blue_500"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/consultDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Дата: 04.06.2022"
+            android:textColor="@color/blue_500"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seansNumber" />
+
+        <Button
+            android:id="@+id/chooseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Изменить дату"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/consultDate"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time">
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/bottonTimeContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:alignContent="stretch"
+                app:alignItems="stretch"
+                app:flexWrap="wrap"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <FrameLayout
+                    android:id="@+id/time8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_stroke_ripple_corners"
+                    android:padding="8dp"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <TextView
+                        android:id="@+id/textTime8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="08:00" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/time9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_stroke_ripple_corners"
+                    android:padding="8dp"
+                    tools:layout_editor_absoluteX="67dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <TextView
+                        android:id="@+id/textTime9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09:00" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/time10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_stroke_ripple_corners"
+                    android:padding="8dp"
+                    tools:layout_editor_absoluteX="126dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <TextView
+                        android:id="@+id/textTime10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:00" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/time11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_stroke_ripple_corners"
+                    android:padding="8dp"
+                    tools:layout_editor_absoluteX="193dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <TextView
+                        android:id="@+id/textTime11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:00" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/time12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_stroke_ripple_corners"
+                    android:padding="8dp"
+                    tools:layout_editor_absoluteX="260dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <TextView
+                        android:id="@+id/textTime12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12:00" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/time13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_stroke_ripple_corners"
+                    android:padding="8dp"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="57dp">
+
+                    <TextView
+                        android:id="@+id/textTime13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13:00" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/time14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_stroke_ripple_corners"
+                    android:padding="8dp"
+                    tools:layout_editor_absoluteX="75dp"
+                    tools:layout_editor_absoluteY="57dp">
+
+                    <TextView
+                        android:id="@+id/textTime14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14:00" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/time15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_stroke_ripple_corners"
+                    android:padding="8dp"
+                    tools:layout_editor_absoluteX="142dp"
+                    tools:layout_editor_absoluteY="57dp">
+
+                    <TextView
+                        android:id="@+id/textTime15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15:00" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/time16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_stroke_ripple_corners"
+                    android:padding="8dp"
+                    tools:layout_editor_absoluteX="209dp"
+                    tools:layout_editor_absoluteY="57dp">
+
+                    <TextView
+                        android:id="@+id/textTime16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16:00" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/time17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_stroke_ripple_corners"
+                    android:padding="8dp"
+                    tools:layout_editor_absoluteX="276dp"
+                    tools:layout_editor_absoluteY="57dp">
+
+                    <TextView
+                        android:id="@+id/textTime17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17:00" />
+                </FrameLayout>
+            </com.google.android.flexbox.FlexboxLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Время: не выбрано"
+            android:textColor="@color/blue_500"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/consultDate"
+            app:layout_constraintTop_toBottomOf="@+id/consultDate" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

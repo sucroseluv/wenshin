@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Заказы"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:id="@+id/ordersMasterFragment"
+        />
+    <item
+        android:title="Расписание"
+        android:icon="@drawable/ic_calendar"
+        android:id="@+id/sketchesMasterFragment"
+        />
+    <item
+        android:title="Аккаунт"
+        android:icon="@drawable/ic_person"
+        android:id="@+id/accountMasterFragment"
+        />
+</menu>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sucroseluvv.wenshin">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/w"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Wenshin"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Screens.Common.NoInternetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.MasterScreens.UploadSketchActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.MasterScreens.MainMasterActivity" />
+        <activity
+            android:name=".Screens.UserScreens.CreateConsultationActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.UserScreens.MainUserActivity" />
+        <activity
+            android:name=".Screens.UserScreens.InfoReccomendationsActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.UserScreens.MainUserActivity" />
+        <activity
+            android:name=".Screens.UserScreens.InfoAboutActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.UserScreens.MainUserActivity" />
+        <activity
+            android:name=".Screens.UserScreens.MasterInfoUserActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.UserScreens.UserNewOrderScreens.NewOrderChoiseMasterUserActivity" />
+        <activity
+            android:name=".Screens.MasterScreens.OrderInfoMasterActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.MasterScreens.MainMasterActivity" />
+        <activity
+            android:name=".Screens.UserScreens.UserSettingsActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.GuestScreens.MainGuestActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Screens.GuestScreens.RegisterActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.GuestScreens.MainGuestActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Screens.UserScreens.OrderInfoUserActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.UserScreens.MainUserActivity" />
+        <activity
+            android:name=".Screens.UserScreens.HistoryOrderInfoUserActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.UserScreens.HistoryUserActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Screens.UserScreens.SketchesSearchUserActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.UserScreens.SketchesUserActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Screens.UserScreens.HistoryUserActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.UserScreens.MainUserActivity" />
+        <activity
+            android:name=".Screens.UserScreens.UserNewOrderScreens.NewOrderChoiseMasterUserActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.UserScreens.NewOrderUserActivity" />
+        <activity
+            android:name=".Screens.Common.OrderMessagingActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.Common.MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Screens.UserScreens.UserNewOrderScreens.NewOrderChoiseSketchUserActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.UserScreens.NewOrderUserActivity" />
+        <activity
+            android:name=".Screens.UserScreens.NewOrderUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.GuestScreens.MainGuestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.UserScreens.UserNewOrderScreens.NewOrderSeansesUserActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.UserScreens.NewOrderUserActivity" />
+        <activity
+            android:name=".Screens.UserScreens.FavoritesUserActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.UserScreens.MainUserActivity" />
+        <activity
+            android:name=".Screens.UserScreens.SketchInfoUserActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.UserScreens.SketchesUserActivity" />
+        <activity
+            android:name=".Screens.UserScreens.SketchesUserActivity"
+            android:exported="false"
+            android:parentActivityName=".Screens.UserScreens.MainUserActivity" />
+        <activity
+            android:name=".Screens.UserScreens.MainUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.MasterScreens.MainMasterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.Common.AuthUserActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Screens.Common.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
